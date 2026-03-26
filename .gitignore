@@ -2,3 +2,4 @@ energy_optimization_portfolio.zip
 .venv
 __pycache__/
 data/
+outputs/test_predictions.csv
