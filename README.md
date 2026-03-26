@@ -1,11 +1,11 @@
-🔋 Energy Optimization for Smart Home Fleets
+# 🔋 Energy Optimization for Smart Home Fleets
 
 This project simulates and optimizes energy usage across a fleet of residential homes equipped with:
 	•	Heat pumps
 	•	Batteries
 	•	Solar panels
 
-🚀 Objective
+## 🚀 Objective
 
 Minimize energy costs and support the grid by:
 	•	Scheduling heat pump operation
@@ -14,7 +14,7 @@ Minimize energy costs and support the grid by:
 
 ⸻
 
-🧠 Approach
+## 🧠 Approach
 	1.	Synthetic data generation
 	•	180 homes
 	•	Weather-driven load + solar
@@ -29,7 +29,7 @@ Minimize energy costs and support the grid by:
 
 ⸻
 
-📊 Results
+## 📊 Results
 	•	Load Forecast MAE: 0.86 kW
 	•	Solar Forecast MAE: 0.09 kW
 	•	Cost reduction: ~4.7%
@@ -37,7 +37,7 @@ Minimize energy costs and support the grid by:
 
 ⸻
 
-🛠 Tech Stack
+## 🛠 Tech Stack
 	•	Python
 	•	pandas, numpy
 	•	scikit-learn
