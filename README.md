@@ -1,30 +1,59 @@
-# FleetFlex: Energy Optimization for Heat Pumps, Batteries, and Grid Support
+🔋 Energy Optimization for Smart Home Fleets
 
-This portfolio project simulates a fleet of electrically heated homes and shows how machine learning plus optimization can reduce energy cost while delivering grid flexibility.
+This project simulates and optimizes energy usage across a fleet of residential homes equipped with:
+	•	Heat pumps
+	•	Batteries
+	•	Solar panels
 
-## Why this matches the role
+🚀 Objective
 
-The job description focuses on three things:
-1. deciding **when a heat pump should run**,
-2. deciding **when a battery should charge or discharge**,
-3. deciding **when to export to the grid**, including at a **fleet level**.
+Minimize energy costs and support the grid by:
+	•	Scheduling heat pump operation
+	•	Charging/discharging batteries
+	•	Exporting energy during high-demand events
 
-This project reproduces that logic in a portfolio-friendly way:
-- a **synthetic but realistic hourly dataset** for 180 homes,
-- ML models that forecast **uncontrollable load** and **solar generation**,
-- a **linear optimization model** that schedules heat pump and battery dispatch,
-- a **flexibility-event constraint** that asks the fleet to support the grid during critical hours.
+⸻
+
+🧠 Approach
+	1.	Synthetic data generation
+	•	180 homes
+	•	Weather-driven load + solar
+	•	Dynamic electricity pricing
+	2.	Forecasting (ML)
+	•	Predict hourly load and solar generation
+	•	Models: Random Forest
+	3.	Optimization (Linear Programming)
+	•	Battery constraints
+	•	Comfort constraints (heating)
+	•	Grid event participation
+
+⸻
+
+📊 Results
+	•	Load Forecast MAE: 0.86 kW
+	•	Solar Forecast MAE: 0.09 kW
+	•	Cost reduction: ~4.7%
+	•	Grid import reduction during events: ~33%
+
+⸻
+
+🛠 Tech Stack
+	•	Python
+	•	pandas, numpy
+	•	scikit-learn
+	•	scipy (optimization)
+	•	matplotlib
 
 ## Project structure
 
 ```text
-energy_optimization_portfolio/
-├── data/
+energy_optimization/
 ├── outputs/
+├── src/
+    ── src_generate_dataset.py
+    ── src_train_optimize.py
 ├── requirements.txt
 ├── setup_venv.sh
-├── src_generate_dataset.py
-├── src_train_optimize.py
 └── README.md
 ```
 
@@ -89,8 +118,8 @@ A rule-based baseline is compared against optimized dispatch over the final eval
 cd energy_optimization_portfolio
 bash setup_venv.sh
 source .venv/bin/activate
-python src_generate_dataset.py
-python src_train_optimize.py
+python src/src_generate_dataset.py
+python src/src_train_optimize.py
 ```
 
 ## What to show on GitHub
