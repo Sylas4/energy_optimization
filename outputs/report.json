@@ -1,0 +1,28 @@
+{
+  "forecast_metrics": {
+    "appliance_load_mae_kw": 0.8635558379168046,
+    "appliance_load_rmse_kw": 1.075115756603918,
+    "solar_mae_kw": 0.08971511894652058,
+    "solar_rmse_kw": 0.44139711327344133
+  },
+  "baseline": {
+    "strategy": "baseline_rules",
+    "total_cost_eur": 3194.7499416017004,
+    "grid_import_kwh": 38354.07133768802,
+    "grid_export_kwh": 0.0,
+    "event_import_kwh": 6547.535102192318,
+    "event_export_kwh": 0.0,
+    "avg_indoor_temp_c": 21.0
+  },
+  "optimized": {
+    "strategy": "optimized_lp",
+    "total_cost_eur": 3043.3359804366173,
+    "grid_import_kwh": 40635.012703013796,
+    "grid_export_kwh": 1600.0,
+    "event_import_kwh": 4357.748483147383,
+    "event_export_kwh": 1600.0,
+    "avg_indoor_temp_c": 20.64709111041037
+  },
+  "cost_reduction_pct": 4.739462052831937,
+  "event_import_reduction_pct": 33.44444260118172
+}
